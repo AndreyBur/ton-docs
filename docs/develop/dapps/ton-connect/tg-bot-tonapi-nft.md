@@ -250,6 +250,8 @@ async def connect_wallet_tonkeeper(message: types.Message):
     await message.answer('Your wallet has been successfully connected.', reply_markup=kb.Checkkb)
 ```
 
+This example shows only two wallets, but you can connect other wallets. You can view the entire list of available wallets by calling connector.get_wallets().
+
 #### 📄 Creating the manifest for TON Connect
 
 In order to properly use the TON Connect we also need to create a file named `pytonconnect-manifest.json`, following this template:
@@ -304,4 +306,4 @@ After that, open the dialogue with your bot in Telegram and try to use it. If yo
 
 - [TON API](https://tonapi.io/)
 - [Python library for TON Connect2.0](https://github.com/XaBbl4/pytonconnect)
-- The tutorial was developed by [Andrew Burnosov](https://github.com/AndreyBurnosov) (TG: [@AndrewBurnosov](https://t.me/AndreyBurnosov))
+- The tutorial was developed by [Andrey Burnosov](https://github.com/AndreyBurnosov) (TG: [@AndreyBurnosov](https://t.me/AndreyBurnosov))
